@@ -1,6 +1,9 @@
 <h1>Movies</h1>
 
 {{#each movies}}
-  {{this.title}}
-  <img src="{{this.image}}">
+  <div>
+    {{this.title}} <br>
+    <img src="{{this.image}}" height="100" ><br>
+    <a href="/movies/{{this._id}}">See details</a>
+  </div>
 {{/each}}
